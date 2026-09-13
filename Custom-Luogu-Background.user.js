@@ -27,7 +27,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 (function (){
     'use strict';
     const DB_NAME = 'LuoguBgDB' , STORE_NAME = 'media';
-    function openDB(){ 
+    function openDB(){
         return new Promise((resolve , reject) =>{
             const r = indexedDB.open(DB_NAME , 1);
             r.onupgradeneeded = e => {
@@ -147,9 +147,8 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 #luogu-bg-layer .bg-inner{position:absolute;top:-30px;left:-30px;width:calc(100% + 60px);height:calc(100% + 60px);background-size:cover;background-position:center;background-repeat:no-repeat;transition:filter 0.4s ease}
 #luogu-bg-layer video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;transition:filter 0.4s ease}
 #luogu-glass-overlay{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:-5;background:rgba(255,255,255,0.3);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);display:none}
-html, body, #app, .lfe-body { background: transparent !important; }
-main, .main-container, .lside-nav, .main-container.lside-nav { background-color: transparent !important; background-image: none !important; }
-#app-old { background: transparent !important; }
+#app, main, .main-container.lside-nav, #app-old { background: transparent !important; }
+.theme-page{--theme-body-back:transparent !important; --theme-body-color:transparent !important; --theme-body-image:none !important}
 
 :root{--lgb-nav-opacity:0.82;--lgb-card-opacity:0.88;--lgb-footer-opacity:0.70}
 .top-bar,
