@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         洛谷 - 自定义背景
 // @namespace    https://www.luogu.com.cn/
-// @version      8.0.0
+// @version      8.0.1
 // @description  为你的洛谷自定义背景！
 // @author       a_small_OIer
 // @license      MIT
